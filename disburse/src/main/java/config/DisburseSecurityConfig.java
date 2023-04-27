@@ -7,6 +7,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
+
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
@@ -27,7 +28,7 @@ public class DisburseSecurityConfig {
 	private String ldapUserDnPattern;
 	
 	@Value("${ldap.enabled}")
-	private String ldapEnabled;
+	private String ldapEnabled; 
 	
 	/*
 	 * @Override protected void configure(HttpSecurity http) throws Exception {
@@ -53,5 +54,5 @@ public class DisburseSecurityConfig {
     		.and()
     		.withUser("admin").password("{noop}admin").roles("ADMIN");
     	}
-    }
+    } 
 }

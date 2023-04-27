@@ -14,7 +14,7 @@ public class DisburseController {
 	private HouseDisburseDAO hdDAO;
 
 	@GetMapping("/home")
-	public String getRoot() {
+	public String getRoot(Model model) {
 		return "disburse";
 	}
 	

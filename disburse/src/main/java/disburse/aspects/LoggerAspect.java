@@ -26,5 +26,5 @@ public class LoggerAspect {
 			username = principal.toString();
 		}
 		logger.info(username + " accessing - " + jp.getTarget().getClass() + " ; Executing " + jp.getSignature().getName() + "() method");
-	}
+	} 
 }
